@@ -1,6 +1,15 @@
 const express = require('express');
+const cors = require('cors')
 const app = express();
 const port = 3000;
+
+const corsOptions = {
+    origin: [
+        'http://localhost:3001',
+        'http://127.0.0.1:3001'
+    ]
+}
+app.use(cors(corsOptions));
 
 app.get('/', (req, res) => res.send('Success!'));
 
@@ -29,7 +38,9 @@ app.get("/cadets", (req,res) => {
    res.json(cadets);
 });
 
+
 app.use(express.json()); // Use this middleware to parse JSON bodies
+
 
 app.post("/cadets", (req, res) => {
     const newCadet = req.body;
