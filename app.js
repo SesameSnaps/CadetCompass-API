@@ -1,38 +1,19 @@
-const express = require('express');
-const cors = require('cors')
+import express from 'express';
+import cors from 'cors'
 const app = express();
 const port = 8080;
+import * as cadets from './data.js'
 
 const corsOptions = {
     origin: true
 }
 app.use(cors(corsOptions));
 
+
 app.get('/', (req, res) => res.send('Success!'));
 
-app.get("/cadets", (req,res) => {
-    const cadets = [
-    {
-      CIN: 1,
-      last_name: "Wong",
-      first_name: "Arnold",
-      preferred_language: "EN",
-    },
-    {
-        CIN: 2,
-        last_name: "Yang",
-        first_name: "Chris",
-        preferred_language: "FR",
-    },
-    {
-        CIN: 3,
-        last_name: "Willoughby",
-        first_name: "Caleb",
-        preferred_language: "EN",
-    },
-   ];
-  
-   res.json(cadets);
+app.get("/en/personal_info", (req,res) => {
+   res.json(cadets.personalInformation[req.query.cin]);
 });
 
 
