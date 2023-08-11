@@ -42,7 +42,7 @@ app.get('/en/qualifications', (req, res) => {
 });
 
 app.get('/en/local_training', (req, res) => {
-    res.json(cadets.localTraining[req.query.cin][req.query.program]);
+    res.json(cadets.localTraining[req.query.cin]);
 });
 
 app.get('/en/summer_training', (req, res) => {

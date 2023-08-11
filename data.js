@@ -1,18 +1,24 @@
+import { LocalTraining } from "./dataObjects.js"
+import willoughbyLocalTraining from "./willoughbyLocalTraining.js"
+
 export const personalInformation = {
     1862211: {
         last_name: "Wong",
         first_name: "Arnold",
         preferred_language: "EN",
+        cin: 1862211,
     },
     1876008: {
         last_name: "Yang",
         first_name: "Chris",
         preferred_language: "FR",
+        cin: 1876008,
     },
     1869177: {
         last_name: "Willoughby",
         first_name: "Caleb",
         preferred_language: "EN",
+        cin: 1869177,
     }
 }
 
@@ -64,21 +70,7 @@ export const qualifications = {
     },
 }
 
-class LocalTrainingArmy {
-    constructor(element, listOfAcquiredElm) {
-        for (item in listOfAcquiredElm) {
-            this.listOfQualifications[item] = true
-        }
-    }
-    listOfQualifications = {
-        
-    }
-}
 
-
-export const localTrainingArmy = {
-    army: {
-        1869177: {
-            qualification: "",
-    }
+export const localTraining = {
+  1869177: willoughbyLocalTraining
 }
