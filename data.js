@@ -24,8 +24,11 @@ export const personalInformation = {
 
 export const cadetInformation = {
     1869177: {
-        rank: "",
-        program: "",
+        cin: 1869177,
+        unit: 2919,
+        program: 'Master Cadet',
+        attendanceRate: 94,
+        currentRank: "MWO"
     },
 }
 
@@ -73,4 +76,89 @@ export const qualifications = {
 
 export const localTraining = {
   1869177: willoughbyLocalTraining
+}
+
+
+export const upcomingActivities = {
+    2919: [
+        {
+            title: 'blah blah',
+            dateTime: '',
+            description: 'Eat cheese :)',
+            type: 'activity'
+        },
+        {
+            title: 'blah blah',
+            dateTime: '',
+            description: 'Eat cheese :)',
+            type: 'activity'
+        },
+        {
+            title: 'blah blah',
+            dateTime: '',
+            description: 'Eat cheese :)',
+            type: 'activity'
+        },
+        {
+            title: 'blah blah',
+            dateTime: '',
+            description: 'Eat cheese :)',
+            type: 'activity'
+        },
+        {
+            title: 'blah blah',
+            dateTime: '',
+            description: 'Eat cheese :)',
+            type: 'activity'
+        },
+        {
+            title: 'blah blah',
+            dateTime: '',
+            description: 'Eat cheese :)',
+            type: 'activity'
+        },
+        {
+            title: 'blah blah',
+            dateTime: '',
+            description: 'Eat cheese :)',
+            type: 'activity'
+        },
+        {
+            title: 'blah blah',
+            dateTime: '',
+            description: 'Eat cheese :)',
+            type: 'activity'
+        },
+        {
+            title: 'blah blah',
+            dateTime: '',
+            description: 'Eat cheese :)',
+            type: 'activity'
+        },
+        {
+            title: 'blah blah',
+            dateTime: '',
+            description: 'Eat cheese :)',
+            type: 'activity'
+        },
+        {
+            title: 'blah blah',
+            dateTime: '',
+            description: 'Eat cheese :)',
+            type: 'activity'
+        },
+        {
+            title: 'blah blah',
+            dateTime: '',
+            description: 'Eat cheese :)',
+            type: 'activity'
+        },
+        {
+            title: 'blah blah',
+            dateTime: '',
+            description: 'Eat cheese :)',
+            type: 'activity'
+        },
+        
+    ]
 }

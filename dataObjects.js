@@ -18,13 +18,9 @@ export class LocalTraining {
      */
     constructor(trainingElements) {
         for (let i = 0; i < trainingElements.length; i++) {
-            console.log(trainingElements[i].trainingProgram)
             if (this[trainingElements[i].trainingProgram] === undefined) {
                 this[trainingElements[i].trainingProgram] = {name: trainingElements[i].trainingProgram}
             }
-            this[trainingElements[i].trainingProgram][trainingElements[i].fortressID] = trainingElements[i]
-            console.log(this)
-            console.log(this['Master Cadet'])
-        }
+            this[trainingElements[i].trainingProgram][trainingElements[i].fortressID] = trainingElements[i]        }
     }
 }
