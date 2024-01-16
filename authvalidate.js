@@ -27,13 +27,14 @@ getJWKSUri()
  * @param {string} bearerToken 
  */
 export async function validateAuthToken(bearerToken) {
+    console.log(bearerToken)
     if (bearerToken === undefined) {
         throw [401, 'Unauthenticated!']
     }
     let token = bearerToken.replace('Bearer ', '')
     return await jose.jwtVerify(token, JWKS, jwtOptions).then((response) => {
         if (response.payload.scp = 'CadetData.ReadAll') {
-            //console.log(response.payload.scp)
+            //\\console.log(response.payload.scp)
             return response
         } else {
             throw [403, 'Invalid Scope!']
